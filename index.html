@@ -72,9 +72,11 @@
 
   <script>
   // create  setDate function to log "Hi" every second by adding
-  // setInterval to it with 1 second
+  // setInterval to it at 1 second
   function setDate() {
-    console.log("Hi");
+    const now = new Date();
+    const seconds = now.getSeconds();
+    console.log(seconds);
   }
 
   setInterval(setDate, 1000);
